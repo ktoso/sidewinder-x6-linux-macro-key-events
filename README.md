@@ -1,6 +1,6 @@
 Sidewinder X6 - Linux Macro Key Events
 ======================================
-This is both a simple revers engineered doc of the Sidewinder X6 Keyboard (the macro key codes),
+This is both a simple reverse engineered doc of the Sidewinder X6 Keyboard (the macro key codes),
 as well as an "event machine" which triggers **XEvent**s when a keystroke on such button is detected.
 
 <img src="https://github.com/ktoso/sidewinder-x6-linux-macro-key-events/raw/master/sidewinder-x6-macro-keys.jpg" alt="keyboard marco keys"/>
