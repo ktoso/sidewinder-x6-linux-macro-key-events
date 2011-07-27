@@ -34,6 +34,7 @@ ARGF.each do |line|
       call 'S11'
     elsif line =~ /08000800 00$/
       call 'S12'
+    # todo support the rest... S13 - S30
 #    else
 #      puts "unrecognized code: " + line
     end
