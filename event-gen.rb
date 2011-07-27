@@ -1,38 +1,42 @@
 #!/usr/bin/env ruby
 
-home = '/home/ktoso/coding/sidewinder-x6-linux-macro-key-events'
+@home = '/home/ktoso/coding/sidewinder-x6-linux-macro-key-events'
+
+def call(keyName)
+  puts "#{keyName} -"
+  %x["#{@home}/actions/#{keyName}.sh"]
+end
 
 ARGF.each do |line|
     puts "____" if line =~ /08000000 00$/
 
     if line =~ /08010000 00$/
-      %x["#{home}/actions/S01.sh"]
+      call 'S01'
     elsif line =~ /08020000 00$/
-      %x["#{home}/actions/S02.sh"]
+      call 'S02'
     elsif line =~ /08040000 00$/
-      %x["#{home}/actions/S03.sh"]
+      call 'S03'
     elsif line =~ /08080000 00$/
-      %x["#{home}/actions/S04.sh"]
+      call 'S04'
     elsif line =~ /08100000 00$/
-      %x["#{home}/actions/S05.sh"]
+      call 'S05'
     elsif line =~ /08200000 00$/
-      %x["#{home}/actions/S06.sh"]
+      call 'S06'
     elsif line =~ /08400000 00$/
-      %x["#{home}/actions/S07.sh"]
+      call 'S07'
     elsif line =~ /08800000 00$/
-      %x["#{home}/actions/S08.sh"]
+      call 'S08'
     elsif line =~ /08000100 00$/
-      %x["#{home}/actions/S09.sh"]
+      call 'S09'
     elsif line =~ /08000200 00$/
-      %x["#{home}/actions/S10.sh"]
+      call 'S10'
     elsif line =~ /08000400 00$/
-      %x["#{home}/actions/S11.sh"]
+      call 'S11'
     elsif line =~ /08000800 00$/
-      %x["#{home}/actions/S12.sh"]
+      call 'S12'
 #    else
 #      puts "unrecognized code: " + line
     end
-
 
 end
 
