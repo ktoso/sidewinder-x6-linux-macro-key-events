@@ -22,6 +22,23 @@ In it we define what we want to happen on this macro-key-press.
 In my opinion it's best to map these keys to `ctrl+shift+F1` and such, so it's easy to map them into any app 
 that supports keyboard shortcuts - I do this with *IntelliJ IDEA* and KDE (for automating )indow management).
 
+How to run it?
+--------------
+You'll need to install some dependencies first. For Fedora for example you'd need to do:
+
+```
+sudo yum install usbmon xdotool
+```
+To use the mapper you need to run (running it in the background is fine too!):
+
+```
+sudo ./run.sh
+```
+
+Then just check out the `actions/` folder and add scripts you'd like to be fired on each keystroke.
+
+
+
 Supported keys
 --------------
 For now only keys **S01** to **S12** are supported. That's because the other keys need to get some info from the PC driver,
