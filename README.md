@@ -33,6 +33,7 @@ Kudos
 Thanks a lot to Bill and some other users of this keyboard - it's really great and I'm happy others think so too.
 
 Some opinions from happy users :-)
+
 ```
 [...]
 Amazing! It works smoothly and it is not difficult to set it up to everybody's needs!
