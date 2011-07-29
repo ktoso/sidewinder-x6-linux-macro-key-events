@@ -32,7 +32,7 @@ sudo yum install usbmon xdotool
 To use the mapper you need to run (running it in the background is fine too!):
 
 ```
-sudo ./run.sh
+sudo ./run.sh &
 ```
 
 Then just check out the `actions/` folder and add scripts you'd like to be fired on each keystroke.
