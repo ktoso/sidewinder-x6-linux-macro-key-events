@@ -5,6 +5,16 @@ as well as an "event machine" which triggers **XEvent**s when a keystroke on suc
 
 <img src="https://github.com/ktoso/sidewinder-x6-linux-macro-key-events/raw/master/sidewinder-x6-macro-keys.jpg" alt="keyboard marco keys"/>
 
+Pro Tip: Go and clone Wattos/LinuxSidewinderX6 for full Sidewinder support!
+===========================================================================
+I just got a quick heads up Filip who reverse engineered the whole Sidewinder protocol and made it available on his github:
+
+**https://github.com/Wattos/LinuxSidewinderX6**
+
+Be sure to check it out, as **it's a complete, fully working SidewinderX6 driver** for our GNU/Linux OSes!
+I highly recommend it and started using it myself too. *Kudos to this man! :-)*
+
+
 What does it do?
 -------------
 The event-gen collects data from `usbmon` and `grep`s it for patterns such as:
