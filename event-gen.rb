@@ -3,8 +3,10 @@
 @home = '/home/ktoso/coding/sidewinder-x6-linux-macro-key-events'
 
 def call(keyName)
-  puts "#{keyName} -"
-  %x["#{@home}/actions/#{keyName}.sh"]
+  fork {
+    puts "#{keyName} -"
+    exec("#{@home}/actions/#{keyName}.sh")
+  }
 end
 
 ARGF.each do |line|
